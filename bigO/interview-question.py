@@ -47,6 +47,11 @@ def containsCommonItem2(arr1, arr2):
 
 
 def containsCommonItem3(arr1, arr2):
+    # This function checks if there is any common item in two input arrays.
+    # It uses Python's built-in function 'any' which returns True if at least one item in the iterable is true.
+    # The iterable in this case is a generator expression that checks for each item in arr1 if it is in arr2.
+    # If it finds any item in arr1 that is also in arr2, it immediately returns True and stops execution.
+    # If no common item is found after checking all items, it returns False.
     return any(item in arr2 for item in arr1)
 
 
